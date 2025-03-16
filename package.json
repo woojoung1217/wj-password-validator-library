@@ -1,0 +1,20 @@
+{
+  "name": "wj-password-validator",
+  "version": "1.0.0",
+  "description": "A library to generate and validate password validation regex based on user inputs",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "test": "jest"
+  },
+  "author": "WJ YOON",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "jest": "^27.4.5"
+  },
+  "devDependencies": {}
+}
