@@ -76,7 +76,7 @@ const isValid = dateRegex.test("2024-03-20");
 ### 사용예시 
 
 
-```
+```javascript
 // 예시: React 컴포넌트에서 라이브러리 사용하기
 
 import React, { useState } from 'react';
