@@ -2,6 +2,8 @@
 
 다양한 유효성 검사를 위한 정규식(RegExp)을 생성하는 JavaScript 라이브러리입니다.
 
+[NPM](https://www.npmjs.com/package/wj-password-validator)
+
 ## 설치
 
 ```bash
