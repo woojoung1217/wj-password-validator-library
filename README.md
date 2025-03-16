@@ -2,6 +2,8 @@
 
 다양한 유효성 검사를 위한 정규식(RegExp)을 생성하는 JavaScript 라이브러리입니다.
 
+[NPM](https://www.npmjs.com/package/wj-password-validator)
+
 ## 설치
 
 ```bash
@@ -69,6 +71,94 @@ const isValid = dateRegex.test("2024-03-20");
 - 이메일 주소 형식 검증
 - 국제 전화번호 형식 검증 (E.164 형식)
 - 날짜 형식 검증 (YYYY-MM-DD)
+
+
+### 사용예시 
+
+
+```javascript
+// 예시: React 컴포넌트에서 라이브러리 사용하기
+
+import React, { useState } from 'react';
+import { createPasswordRegex, createEmailRegex, createPhoneNumberRegex, createDateRegex } from 'your-library-name';
+
+const App = () => {
+  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [date, setDate] = useState('');
+
+  // 정규 표현식 생성
+  const passwordRegex = createPasswordRegex({ minLength: 8, uppercase: true, lowercase: true, digits: true, specialChar: true });
+  const emailRegex = createEmailRegex();
+  const phoneNumberRegex = createPhoneNumberRegex();
+  const dateRegex = createDateRegex();
+
+  // 유효성 검사 함수
+  const validatePassword = (password) => {
+    return new RegExp(passwordRegex).test(password);
+  };
+
+  const validateEmail = (email) => {
+    return new RegExp(emailRegex).test(email);
+  };
+
+  const validatePhoneNumber = (phone) => {
+    return new RegExp(phoneNumberRegex).test(phone);
+  };
+
+  const validateDate = (date) => {
+    return new RegExp(dateRegex).test(date);
+  };
+
+  return (
+    <div>
+      <h1>Form Validation Example</h1>
+      
+      {/* Password */}
+      <input 
+        type="password" 
+        placeholder="Enter password" 
+        value={password} 
+        onChange={(e) => setPassword(e.target.value)} 
+      />
+      <p>Password valid: {validatePassword(password) ? 'Yes' : 'No'}</p>
+
+      {/* Email */}
+      <input 
+        type="email" 
+        placeholder="Enter email" 
+        value={email} 
+        onChange={(e) => setEmail(e.target.value)} 
+      />
+      <p>Email valid: {validateEmail(email) ? 'Yes' : 'No'}</p>
+
+      {/* Phone Number */}
+      <input 
+        type="tel" 
+        placeholder="Enter phone number" 
+        value={phoneNumber} 
+        onChange={(e) => setPhoneNumber(e.target.value)} 
+      />
+      <p>Phone Number valid: {validatePhoneNumber(phoneNumber) ? 'Yes' : 'No'}</p>
+
+      {/* Date */}
+      <input 
+        type="date" 
+        placeholder="Enter date" 
+        value={date} 
+        onChange={(e) => setDate(e.target.value)} 
+      />
+      <p>Date valid: {validateDate(date) ? 'Yes' : 'No'}</p>
+    </div>
+  );
+};
+
+export default App;
+
+
+
+```
 
 ## 라이선스
 
