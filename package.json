@@ -3,18 +3,24 @@
   "version": "1.0.0",
   "description": "A library to generate and validate password validation regex based on user inputs",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "scripts": {
-    "build": "babel src -d dist",
+    "build": "npx babel src -d dist",
+    "prepare": "npm run build",
     "test": "jest"
   },
   "author": "WJ YOON",
   "license": "MIT",
   "dependencies": {
+    "jest": "^27.4.5"
+  },
+  "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "@babel/preset-react": "^7.0.0",
-    "jest": "^27.4.5"
+    "@babel/preset-react": "^7.0.0"
   },
-  "devDependencies": {}
+  "files": [
+    "dist"
+  ]
 }
