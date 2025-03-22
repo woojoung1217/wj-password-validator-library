@@ -1,4 +1,4 @@
-# Password Validator Library made by wj
+# Password Validator Library 
 
 다양한 유효성 검사를 위한 정규식(RegExp)을 생성하는 JavaScript 라이브러리입니다.
 
