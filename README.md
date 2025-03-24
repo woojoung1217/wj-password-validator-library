@@ -7,7 +7,7 @@
 ## 설치
 
 ```bash
-npm install password-validator-library
+npm install wj-password-validator
 ```
 
 ## 사용법
