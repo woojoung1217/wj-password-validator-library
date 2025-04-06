@@ -29,7 +29,7 @@ const createPasswordRegex = ({ minLength, uppercase, lowercase, digits, specialC
 };
 
 const createEmailRegex = () => {
-  return /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  return /^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,6}$/;
 };
 
 const createPhoneNumberRegex = () => {

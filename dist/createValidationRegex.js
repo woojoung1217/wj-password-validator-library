@@ -33,7 +33,7 @@ var createPasswordRegex = exports.createPasswordRegex = function createPasswordR
   return pattern;
 };
 var createEmailRegex = exports.createEmailRegex = function createEmailRegex() {
-  return /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  return /^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,6}$/;
 };
 var createPhoneNumberRegex = exports.createPhoneNumberRegex = function createPhoneNumberRegex() {
   return /^\+?[1-9]\d{1,14}$/;
