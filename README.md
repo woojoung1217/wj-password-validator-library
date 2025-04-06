@@ -1,4 +1,4 @@
-# Password Validator Library
+# Password Validator Library 
 
 다양한 유효성 검사를 위한 정규식(RegExp)을 생성하는 JavaScript 라이브러리입니다.
 
@@ -7,7 +7,7 @@
 ## 설치
 
 ```bash
-npm install password-validator-library
+npm install wj-password-validator
 ```
 
 ## 사용법
