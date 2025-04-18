@@ -36,7 +36,7 @@ var createEmailRegex = exports.createEmailRegex = function createEmailRegex() {
   return /^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,6}$/;
 };
 var createPhoneNumberRegex = exports.createPhoneNumberRegex = function createPhoneNumberRegex() {
-  return /^\+?[1-9]\d{1,14}$/;
+  return /^0[1-9]\d{8,9}$/;
 };
 var createDateRegex = exports.createDateRegex = function createDateRegex() {
   return /^(?:\d{4})-(?:0[1-9]|1[0-2])-(?:0[1-9]|[12][0-9]|3[01])$/;

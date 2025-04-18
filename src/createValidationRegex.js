@@ -33,7 +33,7 @@ const createEmailRegex = () => {
 };
 
 const createPhoneNumberRegex = () => {
-  return /^\+?[1-9]\d{1,14}$/;
+  return /^0[1-9]\d{8,9}$/;
 };
 
 const createDateRegex = () => {
