@@ -12,7 +12,7 @@ npm install wj-password-validator
 
 ## 사용법
 
-### 비밀번호 유효성 검사
+### 비밀번호 유효성 검사 예시
 
 ```javascript
 import { createPasswordRegex } from "password-validator-library";
@@ -29,7 +29,7 @@ const passwordRegex = createPasswordRegex(options);
 const isValid = new RegExp(passwordRegex).test("YourPassword123!");
 ```
 
-### 이메일 유효성 검사
+### 이메일 유효성 검사 예시
 
 ```javascript
 import { createEmailRegex } from "password-validator-library";
